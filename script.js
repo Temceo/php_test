@@ -7,26 +7,8 @@ $("#btnTimeZone").on("click", () => {
     return false;
   }
 
-  // $.ajax({
-  //   url: "libs/php/getTimeZone.php",
-  //   type: "POST",
-  //   headers: {
-  //     "Access-Control-Allow-Origin": "*",
-  //   },
-  //   data: {
-  //     lat: latitude,
-  //     lng: longitude,
-  //   },
-  //   success: function (response) {
-  //     console.log("Response:", response);
-  //   },
-  //   error: function (xhr, status, error) {
-  //     console.error("Error:", error);
-  //   },
-  // });
-
   $.ajax({
-    url: "libs/php/getTimeZone.php",
+    url: "getTimeZone.php",
     type: "POST",
     dataType: "JSON",
     data: {
